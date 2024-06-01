@@ -11,6 +11,7 @@ function Login() {
     email: "",
     password: "",
   });
+ 
 
   const handleLogin = (e) => {
     const { name, value } = e.target;
@@ -20,6 +21,14 @@ function Login() {
     }));
     setErrMsg("");
   };
+
+ const handlechange =(e)=>{
+  const {name,value} = e.target
+  setFormData((prevData)=>({
+    ...prevData,
+    [name]:value
+  }))
+ }
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
