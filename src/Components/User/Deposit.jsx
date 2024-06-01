@@ -19,7 +19,6 @@ const Deposit = () => {
         accountNumber,
         IFSC,
       });
-      console.log(response.status);
       if (response.status === 200) {
         dispatch(transfer(Number(amount)));
         toast.success('Transaction sucess')

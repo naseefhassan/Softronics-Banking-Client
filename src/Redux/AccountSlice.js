@@ -3,7 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   amount: 20000,
 };
-console.log(initialState.amount, "ia");
 
 const accountSlice = createSlice({
   name: "account",
