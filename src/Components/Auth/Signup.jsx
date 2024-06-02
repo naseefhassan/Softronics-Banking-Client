@@ -45,7 +45,7 @@ function Signup() {
         const token = response.data.token
         localStorage.setItem('jwt',token)
 
-        navigate('/accountDetails')
+        navigate('/user/accountDetails')
       } catch (error) {
         if (
           error.response &&
@@ -70,7 +70,7 @@ function Signup() {
           <h1 className="text-sm">
             already a member?{" "}
             <span className="text-blue-600 cursor-pointer">
-              <Link to={'/auth/login'}>Login</Link>
+              <Link to={'/'}>Login</Link>
             </span>
           </h1>
         </div>

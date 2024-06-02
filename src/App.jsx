@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/*" element={<UserRoutes />}></Route>
-        <Route path="/auth/*" element={<CommonRoutes/>}></Route>
+        <Route path="/*" element={<CommonRoutes/>}></Route>
+        <Route path="/user*" element={<UserRoutes />}></Route>
         <Route path="/admin/*" element={<AdminRoutes />}></Route>
       </Routes>
     </>

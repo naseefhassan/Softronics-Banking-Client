@@ -6,7 +6,7 @@ function CommonRoutes() {
   return (
     <div>
       <Routes>
-          <Route path="/login" element={<Login />}></Route>
+          <Route path="/" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
       </Routes>
     </div>

@@ -12,7 +12,7 @@ function UserRoutes() {
     <div>
       <Routes>
         {/* <Route path="/" element={<AuthGuard />}> */}
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
           <Route path="/accountDetails" element={<AccountDeatils />}></Route>\
           <Route path="/withdraw" element={<WithdrawMoney />}></Route>
           <Route path="/balance" element={<Balance />}></Route>

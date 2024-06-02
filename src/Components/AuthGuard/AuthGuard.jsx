@@ -14,13 +14,13 @@ function AuthGuard() {
       dispatch(setToken(token));
       navigate('/')
     } else {
-      navigate('/auth/login');
+      navigate('/login');
     }
   }, [dispatch, navigate]);
 
   useEffect(() => {
     if (!ReduxToken) {
-      navigate('/auth/login');
+      navigate('/login');
     }
   }, [navigate, ReduxToken]);
 

@@ -22,7 +22,7 @@ function AccountDeatils() {
         IFSC,
       });
       saveAccountDetails({accountNumber,IFSC})
-      navigate("/");
+      navigate("/user/home");
     } catch (error) {
       console.error(error);
     }

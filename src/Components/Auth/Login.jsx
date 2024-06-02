@@ -22,20 +22,13 @@ function Login() {
     setErrMsg("");
   };
 
- const handlechange =(e)=>{
-  const {name,value} = e.target
-  setFormData((prevData)=>({
-    ...prevData,
-    [name]:value
-  }))
- }
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axiosInstance.post("/Login", formData);
       const token = response.data.token
       localStorage.setItem('jwt',token)
-      navigate('/')
+      navigate('/home')
       // const { role } = res.data;
 
       // const jwtToken = res.data.token;
@@ -63,7 +56,7 @@ function Login() {
           <h1 className="text-sm">
             don't have an account?
             <span className="text-blue-600 cursor-pointer">
-              <Link to={"/auth/signup"}>Signup</Link>
+              <Link to={"/signup"}>Signup</Link>
             </span>
           </h1>
         </div>
